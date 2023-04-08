@@ -1,0 +1,91 @@
+Starting Nmap 7.93 ( https://nmap.org ) at 2023-04-08 11:25 CDT
+NSE: Loaded 155 scripts for scanning.
+NSE: Script Pre-scanning.
+Initiating NSE at 11:25
+Completed NSE at 11:25, 0.00s elapsed
+Initiating NSE at 11:25
+Completed NSE at 11:25, 0.00s elapsed
+Initiating NSE at 11:25
+Completed NSE at 11:25, 0.00s elapsed
+Initiating Ping Scan at 11:25
+Scanning 10.10.133.248 [4 ports]
+Completed Ping Scan at 11:25, 0.38s elapsed (1 total hosts)
+Initiating Parallel DNS resolution of 1 host. at 11:25
+Completed Parallel DNS resolution of 1 host. at 11:25, 0.26s elapsed
+Initiating SYN Stealth Scan at 11:25
+Scanning 10.10.133.248 [1000 ports]
+Discovered open port 22/tcp on 10.10.133.248
+Discovered open port 80/tcp on 10.10.133.248
+Completed SYN Stealth Scan at 11:26, 15.26s elapsed (1000 total ports)
+Initiating Service scan at 11:26
+Scanning 2 services on 10.10.133.248
+Completed Service scan at 11:26, 6.76s elapsed (2 services on 1 host)
+Initiating OS detection (try #1) against 10.10.133.248
+Retrying OS detection (try #2) against 10.10.133.248
+Retrying OS detection (try #3) against 10.10.133.248
+Retrying OS detection (try #4) against 10.10.133.248
+Retrying OS detection (try #5) against 10.10.133.248
+Initiating Traceroute at 11:26
+Completed Traceroute at 11:26, 0.28s elapsed
+Initiating Parallel DNS resolution of 2 hosts. at 11:26
+Completed Parallel DNS resolution of 2 hosts. at 11:26, 0.20s elapsed
+NSE: Script scanning 10.10.133.248.
+Initiating NSE at 11:26
+Completed NSE at 11:26, 8.97s elapsed
+Initiating NSE at 11:26
+Completed NSE at 11:26, 1.02s elapsed
+Initiating NSE at 11:26
+Completed NSE at 11:26, 0.00s elapsed
+Nmap scan report for 10.10.133.248
+Host is up (0.21s latency).
+Not shown: 998 closed tcp ports (reset)
+PORT   STATE SERVICE VERSION
+22/tcp open  ssh     OpenSSH 7.6p1 Ubuntu 4ubuntu0.3 (Ubuntu Linux; protocol 2.0)
+| ssh-hostkey: 
+|   2048 4ab9160884c25448ba5cfd3f225f2214 (RSA)
+|   256 a9a686e8ec96c3f003cd16d54973d082 (ECDSA)
+|_  256 22f6b5a654d9787c26035a95f3f9dfcd (ED25519)
+80/tcp open  http    Apache httpd 2.4.29 ((Ubuntu))
+|_http-title: HackIT - Home
+| http-cookie-flags: 
+|   /: 
+|     PHPSESSID: 
+|_      httponly flag not set
+| http-methods: 
+|_  Supported Methods: GET HEAD POST OPTIONS
+|_http-server-header: Apache/2.4.29 (Ubuntu)
+No exact OS matches for host (If you know what OS is running on it, see https://nmap.org/submit/ ).
+TCP/IP fingerprint:
+OS:SCAN(V=7.93%E=4%D=4/8%OT=22%CT=1%CU=43894%PV=Y%DS=2%DC=T%G=Y%TM=643195C3
+OS:%P=x86_64-pc-linux-gnu)SEQ(SP=105%GCD=1%ISR=10B%TI=Z%CI=Z%II=I%TS=A)OPS(
+OS:O1=M508ST11NW6%O2=M508ST11NW6%O3=M508NNT11NW6%O4=M508ST11NW6%O5=M508ST11
+OS:NW6%O6=M508ST11)WIN(W1=F4B3%W2=F4B3%W3=F4B3%W4=F4B3%W5=F4B3%W6=F4B3)ECN(
+OS:R=Y%DF=Y%T=40%W=F507%O=M508NNSNW6%CC=Y%Q=)T1(R=Y%DF=Y%T=40%S=O%A=S+%F=AS
+OS:%RD=0%Q=)T2(R=N)T3(R=N)T4(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=R%O=%RD=0%Q=)T5(R=
+OS:Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)T6(R=Y%DF=Y%T=40%W=0%S=A%A=Z%F=
+OS:R%O=%RD=0%Q=)T7(R=Y%DF=Y%T=40%W=0%S=Z%A=S+%F=AR%O=%RD=0%Q=)U1(R=Y%DF=N%T
+OS:=40%IPL=164%UN=0%RIPL=G%RID=G%RIPCK=G%RUCK=G%RUD=G)IE(R=Y%DFI=N%T=40%CD=
+OS:S)
+
+Uptime guess: 2.179 days (since Thu Apr  6 07:08:59 2023)
+Network Distance: 2 hops
+TCP Sequence Prediction: Difficulty=261 (Good luck!)
+IP ID Sequence Generation: All zeros
+Service Info: OS: Linux; CPE: cpe:/o:linux:linux_kernel
+
+TRACEROUTE (using port 111/tcp)
+HOP RTT       ADDRESS
+1   268.38 ms 10.8.0.1
+2   268.71 ms 10.10.133.248
+
+NSE: Script Post-scanning.
+Initiating NSE at 11:26
+Completed NSE at 11:26, 0.00s elapsed
+Initiating NSE at 11:26
+Completed NSE at 11:26, 0.00s elapsed
+Initiating NSE at 11:26
+Completed NSE at 11:26, 0.00s elapsed
+Read data files from: /usr/bin/../share/nmap
+OS and Service detection performed. Please report any incorrect results at https://nmap.org/submit/ .
+Nmap done: 1 IP address (1 host up) scanned in 50.45 seconds
+           Raw packets sent: 1431 (67.038KB) | Rcvd: 1184 (50.914KB)
